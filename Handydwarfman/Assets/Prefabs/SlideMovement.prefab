@@ -45,8 +45,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementActivationButton: 7
   movementActivationRequirement: 4
-  movementTrackingController: 3
-  movementMultiplier: 6
+  movementTrackingController: 2
+  movementMultiplier: 3
   movementPositionLock:
     xState: 0
     yState: 1
