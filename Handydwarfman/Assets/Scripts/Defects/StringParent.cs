@@ -30,7 +30,7 @@ public class StringParent : MonoBehaviour
     public void Fix(int index)
     {
         if (index > 0)
-            parts[index].GetComponent<CharacterJoint>().connectedBody = null;
+            Destroy(parts[index].GetComponent<CharacterJoint>());
         else
         {
             isFixed = true;
