@@ -4801,7 +4801,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d22d8a4d76f03846b7ea3f6a3ab1c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolNeeded: 0
   isFixed: 0
   dirtParticle: {fileID: 147574739972829864}
   decreasingDirtOverTime: 0.01
