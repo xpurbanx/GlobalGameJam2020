@@ -241,6 +241,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Screw
       objectReference: {fileID: 0}
+    - target: {fileID: 6178820542153211382, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
+        type: 3}
+      propertyPath: positionChangeNeeded
+      value: 0.12
+      objectReference: {fileID: 0}
     - target: {fileID: 508320055911467633, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
         type: 3}
       propertyPath: m_LocalPosition.x
