@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5942285765605833287}
   - component: {fileID: 2573931079523076564}
   - component: {fileID: 2069525195532068449}
+  - component: {fileID: 1549375348462619670}
   m_Layer: 0
   m_Name: ForeArm (3)
   m_TagString: Arm
@@ -156,6 +157,18 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &1549375348462619670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142577355617934477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0362d4b676e285498194d3a41aeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &732010368759612266
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +183,7 @@ GameObject:
   - component: {fileID: 3668908272686587027}
   - component: {fileID: 1319447079304661183}
   - component: {fileID: 6613628573766456971}
+  - component: {fileID: 7430145154125250724}
   m_Layer: 0
   m_Name: ForeArm (1)
   m_TagString: Arm
@@ -312,6 +326,18 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &7430145154125250724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732010368759612266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0362d4b676e285498194d3a41aeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3689189760375707741
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +352,7 @@ GameObject:
   - component: {fileID: 4165229506315724406}
   - component: {fileID: 2751041133275899524}
   - component: {fileID: 1156946593847416749}
+  - component: {fileID: 7616063874715468315}
   m_Layer: 0
   m_Name: ForeArm (6)
   m_TagString: Arm
@@ -468,6 +495,18 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &7616063874715468315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3689189760375707741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0362d4b676e285498194d3a41aeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3834192182504318754
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +521,7 @@ GameObject:
   - component: {fileID: 3954252681689886313}
   - component: {fileID: 7033175097400031747}
   - component: {fileID: 8064860692253421091}
+  - component: {fileID: 6686422296087179459}
   m_Layer: 0
   m_Name: ForeArm (4)
   m_TagString: Arm
@@ -624,6 +664,18 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &6686422296087179459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3834192182504318754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0362d4b676e285498194d3a41aeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4841592786051028603
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +690,7 @@ GameObject:
   - component: {fileID: 8048744061476377450}
   - component: {fileID: 379768785344532103}
   - component: {fileID: 4856280860966976627}
+  - component: {fileID: 2437196993303662346}
   m_Layer: 0
   m_Name: ForeArm (5)
   m_TagString: Arm
@@ -780,6 +833,18 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &2437196993303662346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4841592786051028603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0362d4b676e285498194d3a41aeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5751800496718907615
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +858,7 @@ GameObject:
   - component: {fileID: 7822721731510205789}
   - component: {fileID: 8786107973079851378}
   - component: {fileID: 8288260746233123679}
+  - component: {fileID: 8879635571380099566}
   m_Layer: 0
   m_Name: UpperArm
   m_TagString: Arm
@@ -890,6 +956,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8879635571380099566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751800496718907615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0362d4b676e285498194d3a41aeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6193560210155143118
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +982,7 @@ GameObject:
   - component: {fileID: 5608666495772905589}
   - component: {fileID: 4772972722354019034}
   - component: {fileID: 8421205948594322087}
+  - component: {fileID: 5289195516104331990}
   m_Layer: 0
   m_Name: ForeArm (7)
   m_TagString: Arm
@@ -1046,6 +1125,18 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &5289195516104331990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6193560210155143118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0362d4b676e285498194d3a41aeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6442716761278967584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,6 +1151,7 @@ GameObject:
   - component: {fileID: 7912482398076481221}
   - component: {fileID: 8134066721717062496}
   - component: {fileID: 5536693167412007232}
+  - component: {fileID: 6168673768970678881}
   m_Layer: 0
   m_Name: ForeArm (2)
   m_TagString: Arm
@@ -1202,6 +1294,18 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &6168673768970678881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6442716761278967584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0362d4b676e285498194d3a41aeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6474750066517486096
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3685786499583793419}
+  - component: {fileID: 3879155631556907576}
   m_Layer: 0
   m_Name: Strings
   m_TagString: Untagged
@@ -1273,6 +1378,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3879155631556907576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7357690312308971228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc24fdd9bdaa34459ef555af404c7d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Left: {fileID: 0}
+  Right: {fileID: 0}
+  scissors: {fileID: 0}
+  triggerPressed: 0
+  isFixed: 0
 --- !u!1 &8089307922046789354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,6 +1409,7 @@ GameObject:
   - component: {fileID: 5512811099518884615}
   - component: {fileID: 1879695887833970734}
   - component: {fileID: 3989807471580397134}
+  - component: {fileID: 1724636305868909346}
   m_Layer: 0
   m_Name: ForeArm (8)
   m_TagString: Arm
@@ -1429,6 +1552,18 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &1724636305868909346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8089307922046789354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0362d4b676e285498194d3a41aeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9098282231543941073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,6 +1578,7 @@ GameObject:
   - component: {fileID: 5032571260774402943}
   - component: {fileID: 481165467945801565}
   - component: {fileID: 7239524013907860729}
+  - component: {fileID: 1861589665421992843}
   m_Layer: 0
   m_Name: ForeArm
   m_TagString: Arm
@@ -1585,3 +1721,15 @@ CharacterJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &1861589665421992843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9098282231543941073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0362d4b676e285498194d3a41aeb992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
