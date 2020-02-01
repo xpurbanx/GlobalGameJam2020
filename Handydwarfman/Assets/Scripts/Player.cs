@@ -10,7 +10,11 @@ public class Player : MonoBehaviour
 
     VRTK_TransformFollow follow;
 
+    public Collider playerBody;
+
     private GameObject activeCameraRig;
+
+   
 
     private void Start()
     {
@@ -31,6 +35,38 @@ public class Player : MonoBehaviour
     protected virtual void OnDestroy()
     {
         VRTK_SDKManager.instance.RemoveBehaviourToToggleOnLoadedSetupChange(this);
+    }
+
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.name == "Cautious" )
+        {
+            Debug.Log("Be cautious!");
+        }
+
+        if (other.gameObject.name == "Noticed")
+        {
+            Debug.Log("You are being noticed!");
+        }
+
+        if (other.gameObject.name == "Seen")
+        {
+            Debug.Log("RUNNNN!!!");
+        }
+    }
+
+    private void BeingCautious()
+    {
+
+    }
+    private void BeingNoticed()
+    {
+
+    }
+    private void BeingSeen()
+    {
+
     }
 }
 
