@@ -39,7 +39,7 @@
         {
             if (outputOnMin != "")
             {
-                Debug.Log(outputOnMin);
+                //Debug.Log(outputOnMin);
             }
         }
     }
