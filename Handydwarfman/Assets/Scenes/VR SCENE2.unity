@@ -7153,7 +7153,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &140960265
 GameObject:
@@ -10021,7 +10021,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 5.6e-43, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1e-44, z: 1.6575e-41, w: 1.02e-43}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -10037,7 +10037,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &212493409
 GameObject:
@@ -12750,7 +12750,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &279402287
 PrefabInstance:
@@ -23406,6 +23406,7 @@ GameObject:
   - component: {fileID: 485992011}
   - component: {fileID: 485992010}
   - component: {fileID: 485992009}
+  - component: {fileID: 485992017}
   m_Layer: 0
   m_Name: LeftControllerScriptAlias
   m_TagString: Untagged
@@ -23619,6 +23620,72 @@ MonoBehaviour:
   gripSenseAxisChanged: 0
   gripSensePressed: 0
   controllerVisible: 1
+--- !u!114 &485992017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485992007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8968b5d420eccb44b9ca55dd8b291b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnControllerStartGrabInteractableObject:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnControllerGrabInteractableObject:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6802015225517451349, guid: cff87ed3a9171f143bf64616fe72ae6b,
+          type: 3}
+        m_MethodName: DisappearOnGrab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 888502740}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnControllerStartUngrabInteractableObject:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnControllerUngrabInteractableObject:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6802015225517451349, guid: cff87ed3a9171f143bf64616fe72ae6b,
+          type: 3}
+        m_MethodName: AppearOnUngrab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 888502740}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnGrabButtonPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnGrabButtonReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &486305248
 GameObject:
   m_ObjectHideFlags: 0
@@ -40481,7 +40548,7 @@ Transform:
   - {fileID: 436225857}
   - {fileID: 1488487998}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &761053238
 GameObject:
@@ -45464,6 +45531,75 @@ MonoBehaviour:
     fallbackTypeName: VRTK.SDK_FallbackController
     typeName: VRTK.SDK_UnityController
     descriptionIndex: 1
+--- !u!1001 &891042577
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9168836120007150875, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Scissors (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629250138936162289, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 34.065384
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629250138936162289, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629250138936162289, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -40.716866
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629250138936162289, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629250138936162289, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629250138936162289, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629250138936162289, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629250138936162289, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629250138936162289, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629250138936162289, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8629250138936162289, guid: 1d3d471db0989df4e90c965caf93ce9a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d3d471db0989df4e90c965caf93ce9a, type: 3}
 --- !u!1 &893582770
 GameObject:
   m_ObjectHideFlags: 0
@@ -52838,7 +52974,7 @@ Transform:
   - {fileID: 367103684}
   - {fileID: 352445197}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1080586072
 Mesh:
@@ -57915,7 +58051,7 @@ PrefabInstance:
     - target: {fileID: 3229172687365458068, guid: 68e6abff32eebce4694c916fe4bc02e9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3229172687365458068, guid: 68e6abff32eebce4694c916fe4bc02e9,
         type: 3}
@@ -59449,7 +59585,7 @@ PrefabInstance:
     - target: {fileID: 8629250138936162289, guid: 747e8259fc007b84fa51b709834a00d6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8629250138936162289, guid: 747e8259fc007b84fa51b709834a00d6,
         type: 3}
@@ -63883,7 +64019,7 @@ Transform:
   - {fileID: 961988270}
   - {fileID: 110522548}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1350910462
 PrefabInstance:
@@ -64965,7 +65101,7 @@ PrefabInstance:
     - target: {fileID: 8629250138936162289, guid: 747e8259fc007b84fa51b709834a00d6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8629250138936162289, guid: 747e8259fc007b84fa51b709834a00d6,
         type: 3}
@@ -66643,7 +66779,7 @@ Transform:
   - {fileID: 595385399}
   - {fileID: 82484517}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1413250126
 GameObject:
@@ -68474,7 +68610,7 @@ PrefabInstance:
     - target: {fileID: 3653354397298217075, guid: 636a497d816247549ae19f6b07cfbda9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3653354397298217075, guid: 636a497d816247549ae19f6b07cfbda9,
         type: 3}
@@ -69181,7 +69317,7 @@ PrefabInstance:
     - target: {fileID: 1848790683128564805, guid: cff87ed3a9171f143bf64616fe72ae6b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1848790683128564805, guid: cff87ed3a9171f143bf64616fe72ae6b,
         type: 3}
@@ -69293,6 +69429,16 @@ PrefabInstance:
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6802015225517451349, guid: cff87ed3a9171f143bf64616fe72ae6b,
+        type: 3}
+      propertyPath: left
+      value: 
+      objectReference: {fileID: 888502740}
+    - target: {fileID: 6802015225517451349, guid: cff87ed3a9171f143bf64616fe72ae6b,
+        type: 3}
+      propertyPath: right
+      value: 
+      objectReference: {fileID: 1954955081}
     m_RemovedComponents:
     - {fileID: 7658274216984484019, guid: cff87ed3a9171f143bf64616fe72ae6b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cff87ed3a9171f143bf64616fe72ae6b, type: 3}
@@ -70876,7 +71022,7 @@ Transform:
   - {fileID: 485953199}
   - {fileID: 141278803}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1483898144
 GameObject:
@@ -71347,7 +71493,7 @@ PrefabInstance:
     - target: {fileID: 8629250138936162289, guid: 747e8259fc007b84fa51b709834a00d6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8629250138936162289, guid: 747e8259fc007b84fa51b709834a00d6,
         type: 3}
@@ -72690,18 +72836,6 @@ PrefabInstance:
     - target: {fileID: 1469220889570388, guid: afec65f27dcd2c74cba31fc61eea61e6, type: 3}
       propertyPath: m_Name
       value: VRTK_LeftBasicHand
-      objectReference: {fileID: 0}
-    - target: {fileID: 4726844815573086, guid: afec65f27dcd2c74cba31fc61eea61e6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4726844815573086, guid: afec65f27dcd2c74cba31fc61eea61e6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.144
-      objectReference: {fileID: 0}
-    - target: {fileID: 4726844815573086, guid: afec65f27dcd2c74cba31fc61eea61e6, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4726844815573086, guid: afec65f27dcd2c74cba31fc61eea61e6, type: 3}
       propertyPath: m_LocalRotation.x
@@ -82034,6 +82168,7 @@ GameObject:
   - component: {fileID: 1792227222}
   - component: {fileID: 1792227221}
   - component: {fileID: 1792227220}
+  - component: {fileID: 1792227228}
   m_Layer: 0
   m_Name: RightControllerScriptAlias
   m_TagString: Untagged
@@ -82247,6 +82382,72 @@ MonoBehaviour:
   gripSenseAxisChanged: 0
   gripSensePressed: 0
   controllerVisible: 1
+--- !u!114 &1792227228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792227218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8968b5d420eccb44b9ca55dd8b291b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnControllerStartGrabInteractableObject:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnControllerGrabInteractableObject:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6802015225517451349, guid: cff87ed3a9171f143bf64616fe72ae6b,
+          type: 3}
+        m_MethodName: DisappearOnGrab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1954955081}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnControllerStartUngrabInteractableObject:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnControllerUngrabInteractableObject:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6802015225517451349, guid: cff87ed3a9171f143bf64616fe72ae6b,
+          type: 3}
+        m_MethodName: AppearOnUngrab
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1954955081}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_InteractGrab_UnityEvents+ObjectInteractEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnGrabButtonPressed:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnGrabButtonReleased:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_ControllerEvents_UnityEvents+ControllerInteractionEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &1794615308
 GameObject:
   m_ObjectHideFlags: 0
@@ -84531,7 +84732,7 @@ Transform:
   - {fileID: 665520280}
   - {fileID: 1973940183}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1835889952
 GameObject:

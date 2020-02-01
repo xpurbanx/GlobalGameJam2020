@@ -36,6 +36,8 @@ public class StringPieces : MonoBehaviour
         if (other.gameObject.GetComponent<Scissors>() != null || other.gameObject.GetComponentInParent<Scissors>() != null)
             stringParent.scissors = other.gameObject.GetComponent<Scissors>()
                                     ?? other.gameObject.GetComponentInParent<Scissors>();
-        collision = other;
+
+
+
     }
 }
