@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7159584494164937159}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   precisionGrab: 0
-  rightSnapHandle: {fileID: 0}
+  rightSnapHandle: {fileID: 7159584494164937159}
   leftSnapHandle: {fileID: 0}
   throwVelocityWithAttachDistance: 0
   throwMultiplier: 1
