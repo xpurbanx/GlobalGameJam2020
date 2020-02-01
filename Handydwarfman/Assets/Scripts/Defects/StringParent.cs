@@ -42,10 +42,15 @@ public class StringParent : MonoBehaviour
     private void DoTriggerClicked(object sender, ControllerInteractionEventArgs e)
     {
         triggerPressed = true;
+        scissors.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        scissors.gameObject.transform.GetChild(1).gameObject.SetActive(false);
+        Debug.Log(scissors.gameObject.transform.GetChild(0).gameObject.name);
     }
 
     private void DoTriggerReleased(object sender, ControllerInteractionEventArgs e)
     {
         triggerPressed = false;
+        scissors.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        scissors.gameObject.transform.GetChild(1).gameObject.SetActive(true);
     }
 }
