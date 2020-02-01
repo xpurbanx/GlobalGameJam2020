@@ -15,4 +15,13 @@ public enum ToolType
 public class Tool : MonoBehaviour
 {
     public ToolType toolType;
+    [HideInInspector()]
+    public GameObject holdingController;
+
+    private void Update()
+    {
+       // Debug.Log(gameObject.GetComponent<Rigidbody>().velocity.magnitude);
+    }
 }
+
+
