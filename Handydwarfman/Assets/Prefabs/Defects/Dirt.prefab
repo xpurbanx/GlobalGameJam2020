@@ -4762,7 +4762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3685786499583793419}
-  - component: {fileID: 3722142174244170319}
+  - component: {fileID: 2636444387141463554}
   - component: {fileID: 573759232753039698}
   - component: {fileID: 1789369258642371137}
   - component: {fileID: 5358886977847548825}
@@ -4789,7 +4789,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3722142174244170319
+--- !u!114 &2636444387141463554
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4798,13 +4798,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7357690312308971228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75dd17768bc860b45ab38844b3700267, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d22d8a4d76f03846b7ea3f6a3ab1c77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dirtParticle: {fileID: 147574739972829864}
   toolNeeded: 0
-  timeNeeded: 5
-  positionChangeNeeded: 0
+  isFixed: 0
+  dirtParticle: {fileID: 147574739972829864}
+  decreasingDirtOverTime: 0.01
 --- !u!33 &573759232753039698
 MeshFilter:
   m_ObjectHideFlags: 0

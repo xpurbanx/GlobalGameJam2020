@@ -13,6 +13,7 @@ TagManager:
   - Torso
   - Head
   - CameraRig
+  - Hammer
   layers:
   - Default
   - TransparentFX
