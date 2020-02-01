@@ -9,7 +9,7 @@ public class Fixing : MonoBehaviour
 
     public ToolType toolNeeded;
 
-    void Fix()
+    void Fix(GameObject usedTool)
     {
         switch (toolNeeded)
         {
@@ -26,8 +26,8 @@ public class Fixing : MonoBehaviour
                 break;
 
             case ToolType.Hammer:
-                // sprawdzamy czy w poprzedniej klatce miał odpowiednią prędkość
-                // naprawione
+                if (usedTool.GetComponent<Rigidbody>().velocity.magnitude > 4f)
+                    transform.position = new Vector3(transform.position.x, transform.position.y - 0.03f, transform.position.z);
                 break;
 
             case ToolType.Pliers:
@@ -47,13 +47,15 @@ public class Fixing : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.GetComponent<Tool>().toolType == toolNeeded && toolNeeded != ToolType.Hammer)
-            Fix();
+        if (collision.gameObject.GetComponent<Tool>() != null)
+            if (collision.gameObject.GetComponent<Tool>().toolType == toolNeeded && toolNeeded != ToolType.Hammer && !isFixed)
+                Fix(collision.gameObject);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<Tool>().toolType == toolNeeded && toolNeeded == ToolType.Hammer)
-            Fix();
+        if (collision.gameObject.GetComponent<Tool>() != null)
+            if (collision.gameObject.GetComponent<Tool>().toolType == toolNeeded && toolNeeded == ToolType.Hammer && !isFixed)
+                Fix(collision.gameObject);
     }
 }
