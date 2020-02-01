@@ -97,13 +97,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8629250138936162289}
-  - component: {fileID: 8446326709715374557}
+  - component: {fileID: 8743510372229148389}
   - component: {fileID: 2019998836590921773}
-  - component: {fileID: 1674413175866769590}
   - component: {fileID: 5020482426409642550}
   - component: {fileID: 8231524060635123174}
   - component: {fileID: 2436313069439883243}
   - component: {fileID: 8849156646771907019}
+  - component: {fileID: 1473726169933411788}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -126,7 +126,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8446326709715374557
+--- !u!114 &8743510372229148389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -135,11 +135,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 9168836120007150875}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea4f25bdc55e94545a968c91c4a3e8a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 55429203bf922e84694bd75a3f5fd343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   toolType: 2
   holdingController: {fileID: 0}
+  hammerHead: {fileID: 3583305398490499800}
 --- !u!114 &2019998836590921773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,28 +174,6 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   usingState: 0
---- !u!114 &1674413175866769590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9168836120007150875}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a1ebaa51525b734287157cb3f53f958, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  precisionGrab: 0
-  rightSnapHandle: {fileID: 1476139468029825104}
-  leftSnapHandle: {fileID: 0}
-  throwVelocityWithAttachDistance: 0
-  throwMultiplier: 1
-  onGrabCollisionDelay: 0
-  detachDistance: 1
-  velocityLimit: Infinity
-  angularVelocityLimit: Infinity
-  maxDistanceDelta: 10
 --- !u!114 &5020482426409642550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,7 +211,7 @@ BoxCollider:
   m_GameObject: {fileID: 9168836120007150875}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.21977186, y: 0.1, z: 0.08842754}
   m_Center: {x: 0.009396791, y: 0, z: 0.21700168}
@@ -249,6 +228,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12243676, y: 0.1, z: 0.53025764}
   m_Center: {x: 0.05806434, y: 0, z: -0.0039133728}
+--- !u!114 &1473726169933411788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9168836120007150875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afa0b205791c9f4496bf2814aeac078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  precisionGrab: 0
+  rightSnapHandle: {fileID: 1476139468029825104}
+  leftSnapHandle: {fileID: 0}
+  throwVelocityWithAttachDistance: 0
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
+  destroyImmediatelyOnThrow: 1
+  breakForce: Infinity
 --- !u!1001 &5670992417687247252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -256,6 +255,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7681742739004179151}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1000010148899198, guid: 3fe5e5b169873104ca3a52a601994ea5, type: 3}
       propertyPath: m_Name
       value: Hammer_02
@@ -340,18 +347,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 64000013625896994, guid: 3fe5e5b169873104ca3a52a601994ea5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 64000012805145678, guid: 3fe5e5b169873104ca3a52a601994ea5,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 64000012805145678, guid: 3fe5e5b169873104ca3a52a601994ea5, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fe5e5b169873104ca3a52a601994ea5, type: 3}
 --- !u!4 &5673792755650717090 stripped
 Transform:
