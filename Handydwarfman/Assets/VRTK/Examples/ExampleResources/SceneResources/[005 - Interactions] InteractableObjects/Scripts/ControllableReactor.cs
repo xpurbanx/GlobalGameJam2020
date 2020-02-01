@@ -31,7 +31,7 @@
         {
             if (outputOnMax != "")
             {
-                Debug.Log(outputOnMax);
+                //Debug.Log(outputOnMax);
             }
         }
 
