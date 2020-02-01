@@ -26,17 +26,8 @@ public class Fixing : MonoBehaviour
                 break;
 
             case ToolType.Hammer:
-<<<<<<< Updated upstream
                 if (usedTool.GetComponent<Rigidbody>().velocity.magnitude > 1f)
                     transform.position = new Vector3(transform.position.x, transform.position.y - 0.03f, transform.position.z);
-=======
-                if (usedTool.GetComponent<Rigidbody>().velocity.magnitude > 0.3f)
-                {
-                    positionChangeNeeded -= decreasingPosition;
-                    transform.position = new Vector3(transform.position.x, transform.position.y - decreasingPosition, transform.position.z);
-                    if (positionChangeNeeded <= 0) isFixed = true;
-                }
->>>>>>> Stashed changes
                 break;
 
             case ToolType.Pliers:
