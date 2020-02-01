@@ -15,6 +15,7 @@ TagManager:
   - CameraRig
   - Hammer
   - Tool
+  - Nail
   layers:
   - Default
   - TransparentFX
