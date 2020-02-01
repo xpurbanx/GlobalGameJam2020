@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 8448643755606980989}
   - component: {fileID: 5374278497785204710}
   - component: {fileID: 6714480911634148015}
-  - component: {fileID: 493616436264341041}
+  - component: {fileID: 6802015225517451349}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -739,7 +739,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
---- !u!114 &493616436264341041
+--- !u!114 &6802015225517451349
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -748,10 +748,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3412699854960070677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc03ebe2fd9772247b83b71f42a1f33a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4aa48c8273355dc43b933d7be88aa643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sdkObject: 1
+  left: {fileID: 0}
+  right: {fileID: 0}
 --- !u!1 &3594120126491801326
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ TagManager:
   - Hammer
   - Tool
   - Nail
+  - Obstacle
   layers:
   - Default
   - TransparentFX
