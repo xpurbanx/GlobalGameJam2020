@@ -4,7 +4,7 @@ using UnityEngine;
 using VRTK;
 
 public class StringPieces : MonoBehaviour
-{ 
+{
     StringParent stringParent;
 
     private void Start()
@@ -16,8 +16,7 @@ public class StringPieces : MonoBehaviour
     {
         if (stringParent.scissors != null && !stringParent.isFixed && other.gameObject.GetComponent<Scissors>() != null)
         {
-            //if (stringParent.triggerPressed)
-            Debug.Log(gameObject.name);
+            if (stringParent.triggerPressed)
                 stringParent.Fix(transform.GetSiblingIndex());
         }
     }
