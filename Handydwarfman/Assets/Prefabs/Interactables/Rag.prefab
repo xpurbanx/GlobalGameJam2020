@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 7458340725911957531}
   m_Layer: 0
   m_Name: Rag
-  m_TagString: Untagged
+  m_TagString: Tool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
