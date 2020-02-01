@@ -26,7 +26,7 @@ public class Fixing : MonoBehaviour
                 break;
 
             case ToolType.Hammer:
-                if (usedTool.GetComponent<Rigidbody>().velocity.magnitude > 2.5f)
+                if (usedTool.GetComponent<Rigidbody>().velocity.magnitude > 1f)
                     transform.position = new Vector3(transform.position.x, transform.position.y - 0.03f, transform.position.z);
                 break;
 
