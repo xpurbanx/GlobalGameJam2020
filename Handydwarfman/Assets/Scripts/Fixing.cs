@@ -45,17 +45,20 @@ public class Fixing : MonoBehaviour
         }
     }
 
-    private void OnCollisionStay(Collision collision)
+    private void OnTriggerStay(Collider other)
     {
-        if (collision.gameObject.GetComponent<Tool>() != null)
-            if (collision.gameObject.GetComponent<Tool>().toolType == toolNeeded && toolNeeded != ToolType.Hammer && !isFixed)
-                Fix(collision.gameObject);
+        if (other.gameObject.GetComponent<Tool>() != null)
+            if (other.gameObject.GetComponent<Tool>().toolType == toolNeeded && toolNeeded != ToolType.Hammer && !isFixed)
+                Fix(other.gameObject);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.GetComponent<Tool>() != null)
-            if (collision.gameObject.GetComponent<Tool>().toolType == toolNeeded && toolNeeded == ToolType.Hammer && !isFixed)
-                Fix(collision.gameObject);
+        if (other.gameObject.GetComponent<Tool>() != null)
+        {
+            Debug.Log(other.gameObject.name);
+            if (other.gameObject.GetComponent<Tool>().toolType == toolNeeded && toolNeeded == ToolType.Hammer && !isFixed)
+                Fix(other.gameObject);
+        }
     }
 }
