@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        
         follow = GetComponent<VRTK_TransformFollow>();
         follow.gameObjectToFollow = activeCameraRig;
         //follow.gameObjectToFollow = VRTK_DeviceFinder.PlayAreaTransform().gameObject;

@@ -16,7 +16,7 @@ public class Watcher : MonoBehaviour
     {
         if(other == Player.instance.playerBody)
         {
-
+            
         }
     }
 
