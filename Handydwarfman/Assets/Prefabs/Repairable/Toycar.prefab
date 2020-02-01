@@ -3391,11 +3391,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4281205378891535562, guid: e31a211c9c6a8744f819de47ddc31b9c,
-        type: 3}
-      propertyPath: m_Name
-      value: Toycar
-      objectReference: {fileID: 0}
     - target: {fileID: 6956781165687238812, guid: e31a211c9c6a8744f819de47ddc31b9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3450,6 +3445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4281205378891535562, guid: e31a211c9c6a8744f819de47ddc31b9c,
+        type: 3}
+      propertyPath: m_Name
+      value: Toycar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e31a211c9c6a8744f819de47ddc31b9c, type: 3}
@@ -3525,6 +3525,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7658777669716820463, guid: 395a19fe4ea390a47852f602da195d76,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 395a19fe4ea390a47852f602da195d76, type: 3}
