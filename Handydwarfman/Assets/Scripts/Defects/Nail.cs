@@ -10,12 +10,15 @@ public class Nail : Fixing
     public Collider topCollider;
     private Hammer hammer;
 
+    private Vector3 translateVector;
+
     public void Fix()
     {
         if (hammer.GetComponent<Rigidbody>().velocity.magnitude > 0.3f)
         {
+            translateVector = new Vector3(0, decreasingPosition, 0);
             positionChangeNeeded -= decreasingPosition;
-            transform.position = new Vector3(transform.position.x, transform.position.y - decreasingPosition, transform.position.z);
+            transform.localPosition -= translateVector;
             if (positionChangeNeeded <= 0) isFixed = true;
         }
     }
