@@ -8,10 +8,10 @@ public class Dirt : Fixing
     public float decreasingDirtOverTime = 0.01f;   // O ile zmniejsza się alpha materiału brudu, każdorazowo gdy prędkość ścierki jest > 0.3f
 
     private Rag rag;
-
+    public float requiredVelocity = 0.3f;
     private void Fix()
     {
-        if (rag.GetComponent<Rigidbody>().velocity.magnitude > 0.3f)
+        if (rag.GetComponent<Rigidbody>().velocity.magnitude > requiredVelocity)
         {
             if (!dirtParticle.isPlaying) dirtParticle.Play();
             Color color = GetComponent<MeshRenderer>().material.color;
