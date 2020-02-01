@@ -592,6 +592,11 @@ MonoBehaviour:
   fovCautious: {fileID: 8962018851858091380}
   fovNoticed: {fileID: 6215235593394697878}
   fovSeen: {fileID: 1225370750102106902}
+  head: {fileID: 8151054443968889861}
+  lookTargets: []
+  lookSpeed: 10
+  minDelay: 5
+  maxDelay: 10
 --- !u!1 &2140301710750977683
 GameObject:
   m_ObjectHideFlags: 0
