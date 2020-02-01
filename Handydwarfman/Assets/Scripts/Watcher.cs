@@ -11,6 +11,9 @@ public class Watcher : MonoBehaviour
     public Collider fovNoticed;
     public Collider fovSeen;
 
+    public GameObject head;
+    public List<Transform> lookTargets;
+
 
     private void OnTriggerStay(Collider other)
     {
@@ -18,6 +21,12 @@ public class Watcher : MonoBehaviour
         {
             
         }
+    }
+
+
+    public void LookAtNextTarget()
+    {
+
     }
 
 }
