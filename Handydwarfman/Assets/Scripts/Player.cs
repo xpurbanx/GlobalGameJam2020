@@ -25,12 +25,12 @@ public class Player : MonoBehaviour
         follow.Follow();
     }
 
-    private void Update()
-    {
-        transform.position = activeCameraRig.transform.position;
-        rotation = Quaternion.LookRotation(activeCameraRig.transform.forward);
-        transform.rotation = rotation;
-    }
+    //private void Update()
+    //{
+    //    transform.position = activeCameraRig.transform.position;
+    //    rotation = Quaternion.LookRotation(activeCameraRig.transform.forward);
+    //    transform.rotation = rotation;
+    //}
 
     void Awake()
     {
