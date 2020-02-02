@@ -19,8 +19,11 @@ TagManager:
   - Obstacle
   - CableEnding
   - Screw
+<<<<<<< HEAD
   - Movement
   - SafeZone
+=======
+>>>>>>> parent of 7156113... added safe zones
   layers:
   - Default
   - TransparentFX
