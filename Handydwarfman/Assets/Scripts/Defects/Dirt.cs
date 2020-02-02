@@ -10,6 +10,11 @@ public class Dirt : Fixing
 
     private Rag rag;
 
+    private void Start()
+    {
+        GameController = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+    }
+
     private void Fix()
     {
         if (rag.GetComponent<Rigidbody>().velocity.magnitude > 0.3f)

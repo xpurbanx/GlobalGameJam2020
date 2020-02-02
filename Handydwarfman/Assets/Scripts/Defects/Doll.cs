@@ -10,6 +10,11 @@ public class Doll : MonoBehaviour
 
     private bool isFixed;
 
+    private void Start()
+    {
+        GameController = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+    }
+
     public void CheckIfFixed()
     {
         bool isFixed = true;
