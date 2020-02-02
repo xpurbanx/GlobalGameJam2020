@@ -13,6 +13,7 @@ public class CableEntry : MonoBehaviour
         if (other.gameObject.tag == "CableEnding")
         {
             other.transform.position = positionForCable.transform.position;
+            other.transform.rotation = positionForCable.transform.rotation;
             other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             other.GetComponentInParent<Cable>().holdingHand.GetComponent<VRTK_InteractGrab>().ForceRelease();
         }
