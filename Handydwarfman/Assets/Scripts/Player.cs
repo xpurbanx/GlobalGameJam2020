@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     public Collider playerBody;
 
     private GameObject activeCameraRig;
-
+    private Quaternion rotation;
    
 
     private void Start()
@@ -23,6 +23,13 @@ public class Player : MonoBehaviour
         follow.gameObjectToFollow = activeCameraRig;
         //follow.gameObjectToFollow = VRTK_DeviceFinder.PlayAreaTransform().gameObject;
         follow.Follow();
+    }
+
+    private void Update()
+    {
+        transform.position = activeCameraRig.transform.position;
+        rotation = Quaternion.LookRotation(activeCameraRig.transform.forward);
+        transform.rotation = rotation;
     }
 
     void Awake()
