@@ -48,6 +48,11 @@ public class Player : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        if (other.tag == "SafeZone")
+        {
+            Debug.Log("You are safe!");
+        }
+
         if (other.gameObject.name == "Cautious" )
         {
             Debug.Log("Be cautious!");
