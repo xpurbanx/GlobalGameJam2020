@@ -5,7 +5,7 @@ using VRTK;
 
 public class StringParent : MonoBehaviour
 {
-    public GameObject Left, Right;
+    public GameObject PlayerController;
     public Scissors scissors;
     public bool triggerPressed;
     public bool isFixed;
@@ -16,10 +16,11 @@ public class StringParent : MonoBehaviour
 
     void Start()
     {
-        Left.GetComponent<VRTK_ControllerEvents>().TriggerPressed += new ControllerInteractionEventHandler(DoTriggerClicked);
-        Right.GetComponent<VRTK_ControllerEvents>().TriggerPressed += new ControllerInteractionEventHandler(DoTriggerClicked);
-        Left.GetComponent<VRTK_ControllerEvents>().TriggerReleased += new ControllerInteractionEventHandler(DoTriggerReleased);
-        Right.GetComponent<VRTK_ControllerEvents>().TriggerReleased += new ControllerInteractionEventHandler(DoTriggerReleased);
+        HandObject handObject = PlayerController.GetComponent<HandObject>();
+        handObject.GetLeftHand().GetComponent<VRTK_ControllerEvents>().TriggerPressed += new ControllerInteractionEventHandler(DoTriggerClicked);
+        handObject.GetRightHand().GetComponent<VRTK_ControllerEvents>().TriggerPressed += new ControllerInteractionEventHandler(DoTriggerClicked);
+        handObject.GetLeftHand().GetComponent<VRTK_ControllerEvents>().TriggerReleased += new ControllerInteractionEventHandler(DoTriggerReleased);
+        handObject.GetRightHand().GetComponent<VRTK_ControllerEvents>().TriggerReleased += new ControllerInteractionEventHandler(DoTriggerReleased);
 
         parts = new Rigidbody[10];
 
