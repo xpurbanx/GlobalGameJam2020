@@ -682,8 +682,8 @@ MonoBehaviour:
   ignoreGrabbedCollisions: 1
   ignoreCollisionsWith: []
   headsetYOffset: 0.2
-  movementThreshold: 0.0015
-  playAreaMovementThreshold: 0.00075
+  movementThreshold: 0
+  playAreaMovementThreshold: 0
   standingHistorySamples: 5
   leanYThreshold: 0.5
   stepUpYOffset: 0.15
@@ -746,7 +746,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3412699854960070677}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4aa48c8273355dc43b933d7be88aa643, type: 3}
   m_Name: 
