@@ -22,6 +22,7 @@ TagManager:
   - SafeZone
   - Time
   - Points
+  - Scissors
   layers:
   - Default
   - TransparentFX

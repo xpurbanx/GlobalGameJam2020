@@ -393,7 +393,7 @@ GameObject:
   - component: {fileID: 8309278526605176221}
   m_Layer: 0
   m_Name: Screwdriver
-  m_TagString: Untagged
+  m_TagString: Tool
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -405,8 +405,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9168836120007150875}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.0000001192093, y: 0.7035554, z: -0.00000014901163, w: 0.71064043}
+  m_LocalPosition: {x: 44.08745, y: 1.0995493, z: -39.313705}
   m_LocalScale: {x: 0.36771, y: 0.36771, z: 0.36771}
   m_Children:
   - {fileID: 7681742739004179151}

@@ -14,6 +14,8 @@ public class CableEntry : MonoBehaviour
 
     private void Start()
     {
+        GameController = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
         GetComponentInParent<Doll>().cableEntries.Add(this);
     }
 
