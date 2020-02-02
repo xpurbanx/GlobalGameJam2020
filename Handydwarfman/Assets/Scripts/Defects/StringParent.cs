@@ -17,7 +17,7 @@ public class StringParent : MonoBehaviour
 
     void Start()
     {
-        GameController = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        GameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
 
         HandObject handObject = PlayerController.GetComponent<HandObject>();
         handObject.GetLeftHand().GetComponent<VRTK_ControllerEvents>().TriggerPressed += new ControllerInteractionEventHandler(DoTriggerClicked);

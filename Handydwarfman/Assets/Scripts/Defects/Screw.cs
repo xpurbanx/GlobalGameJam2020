@@ -14,7 +14,7 @@ public class Screw : Fixing
 
     private void Start()
     {
-        GameController = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        GameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
 
     public void Fix()

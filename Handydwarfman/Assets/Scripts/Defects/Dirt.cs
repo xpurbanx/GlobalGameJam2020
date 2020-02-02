@@ -12,7 +12,7 @@ public class Dirt : Fixing
 
     private void Start()
     {
-        GameController = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        GameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
 
     private void Fix()
