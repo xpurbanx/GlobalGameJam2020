@@ -19,6 +19,7 @@ TagManager:
   - Obstacle
   - CableEnding
   - Screw
+  - Movement
   layers:
   - Default
   - TransparentFX

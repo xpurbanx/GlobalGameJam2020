@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 4560214682127350811}
   positionForCable: {fileID: 5446713935486159525}
@@ -273,6 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 6647648626198291293}
   positionForCable: {fileID: 2685263316979155082}
@@ -397,6 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 6647648626198291293}
   positionForCable: {fileID: 4057314607867965472}
@@ -565,6 +568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 4560214682127350811}
   positionForCable: {fileID: 7770805779111722345}
@@ -4173,6 +4177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c2242d8820d2f47a52d052f9392894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   cableEntries: []
   hearts: {fileID: 6934381545581061563}
 --- !u!114 &7695803661078367710
@@ -6166,6 +6171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 4560214682127350811}
   positionForCable: {fileID: 1600981102065148641}
@@ -6491,6 +6497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 6647648626198291293}
   positionForCable: {fileID: 6290898632297267947}
@@ -6681,6 +6688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 4560214682127350811}
   positionForCable: {fileID: 4810814607754724438}
@@ -6835,6 +6843,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 6647648626198291293}
   positionForCable: {fileID: 1957413776024701609}
@@ -7047,6 +7056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 0}
   positionForCable: {fileID: 1824426471734351375}
@@ -9879,6 +9889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 6647648626198291293}
   positionForCable: {fileID: 2181131559154973112}
@@ -10389,6 +10400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 4560214682127350811}
   positionForCable: {fileID: 22668423183618566}
@@ -13265,6 +13277,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c2242d8820d2f47a52d052f9392894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 5431807942102547747, guid: b7c1556e4edd1344c8460b6b693b87f5,
+    type: 3}
   cableEntries: []
   hearts: {fileID: 7179714875112436133}
 --- !u!114 &6979047117774505284
@@ -17536,6 +17550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07e7dd96700d3064099bbdb96530b4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameController: {fileID: 0}
   PlayerController: {fileID: 0}
   sparks: {fileID: 0}
   positionForCable: {fileID: 3015387058614358852}

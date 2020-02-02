@@ -234,6 +234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFixed: 0
+  GameController: {fileID: 5431807942102547747, guid: b7c1556e4edd1344c8460b6b693b87f5,
+    type: 3}
   rotationChangeNeeded: 0
   topCollider: {fileID: 8702600403581696742}
 --- !u!1 &8096711278060441304

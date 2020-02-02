@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Dirt : Fixing
 {
+    public GameManager GameController;
     public ParticleSystem dirtParticle;
     public float decreasingDirtOverTime = 0.01f;   // O ile zmniejsza się alpha materiału brudu, każdorazowo gdy prędkość ścierki jest > 0.3f
 
@@ -19,6 +20,7 @@ public class Dirt : Fixing
             if (color.a - decreasingDirtOverTime <= 0)
             {
                 isFixed = true;
+                GameController.AddPoints(1);
             }
         }
 

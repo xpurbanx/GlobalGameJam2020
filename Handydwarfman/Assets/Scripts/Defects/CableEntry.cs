@@ -5,6 +5,7 @@ using VRTK;
 
 public class CableEntry : MonoBehaviour
 {
+    public GameManager GameController;
     public GameObject PlayerController;
     public ParticleSystem sparks;
     public GameObject positionForCable;
