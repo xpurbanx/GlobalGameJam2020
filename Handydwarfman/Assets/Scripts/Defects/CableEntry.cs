@@ -14,7 +14,7 @@ public class CableEntry : MonoBehaviour
         {
             other.transform.position = positionForCable.transform.position;
             other.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-            other.GetComponent<CableEnding>().holdingHand.GetComponent<VRTK_InteractGrab>().ForceRelease();
+            other.GetComponentInParent<Cable>().holdingHand.GetComponent<VRTK_InteractGrab>().ForceRelease();
         }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CableEnding : MonoBehaviour
+public class Cable : MonoBehaviour
 {
     public GameObject holdingHand;
 
