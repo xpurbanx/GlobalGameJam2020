@@ -698,6 +698,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.0492
       objectReference: {fileID: 0}
+    - target: {fileID: 5275840151177105826, guid: 70543c8662b536d4faea0088d0638a22,
+        type: 3}
+      propertyPath: applyScalingOnSnap
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7590426889870169176, guid: 70543c8662b536d4faea0088d0638a22,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -727,6 +732,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.1571
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551879753536454820, guid: 70543c8662b536d4faea0088d0638a22,
+        type: 3}
+      propertyPath: applyScalingOnSnap
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6107526456037790916, guid: 70543c8662b536d4faea0088d0638a22,
         type: 3}

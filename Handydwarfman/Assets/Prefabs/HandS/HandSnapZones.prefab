@@ -1617,19 +1617,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &7326832741253437832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7824527862238672170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21abb7edd90b063408680637d11193d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropZone: {fileID: 7854490277719379874}
 --- !u!114 &6207854978505006435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1646,6 +1633,19 @@ MonoBehaviour:
   checkType: 1
   identifiers:
   - Nail
+--- !u!114 &7326832741253437832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7824527862238672170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21abb7edd90b063408680637d11193d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropZone: {fileID: 7854490277719379874}
 --- !u!1 &8355059670092101078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,6 +2086,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6530496455605403343, guid: 60a441a33d610d64b98529a2eb8aab67,
         type: 3}
+    - target: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
+        type: 3}
+      propertyPath: applyScalingOnSnap
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 3}
 --- !u!1 &5233467826844429098 stripped
@@ -2188,6 +2193,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6530496455605403343, guid: 60a441a33d610d64b98529a2eb8aab67,
         type: 3}
+    - target: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
+        type: 3}
+      propertyPath: applyScalingOnSnap
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 3}
 --- !u!4 &6111369914436532912 stripped
@@ -2290,6 +2300,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6530496455605403343, guid: 60a441a33d610d64b98529a2eb8aab67,
         type: 3}
+    - target: {fileID: 114000012880271118, guid: 5d323709f0cbd454196647d9d8f2dd84,
+        type: 3}
+      propertyPath: applyScalingOnSnap
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d323709f0cbd454196647d9d8f2dd84, type: 3}
 --- !u!1 &7591702791183776300 stripped
