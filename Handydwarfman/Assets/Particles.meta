@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Handydwarfman/Assets/Particles.meta
 guid: 1314bb9e528113b4ba90628fade0ac5c
 folderAsset: yes
 DefaultImporter:
+=======
+guid: 2e4411862c7fbc64faf4e7b39f15407b
+PrefabImporter:
+>>>>>>> 945465f4ad88d27e120ea5bd99563ae249ac03fa:Handydwarfman/Assets/Prefabs/LookTargets.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

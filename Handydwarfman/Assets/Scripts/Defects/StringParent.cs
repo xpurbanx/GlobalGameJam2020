@@ -9,6 +9,7 @@ public class StringParent : MonoBehaviour
     public Scissors scissors;
     public bool triggerPressed;
     public bool isFixed;
+    private VRTK_InteractGrab grab;
 
     Rigidbody[] parts;
 
@@ -19,12 +20,19 @@ public class StringParent : MonoBehaviour
         Right.GetComponent<VRTK_ControllerEvents>().TriggerPressed += new ControllerInteractionEventHandler(DoTriggerClicked);
         Left.GetComponent<VRTK_ControllerEvents>().TriggerReleased += new ControllerInteractionEventHandler(DoTriggerReleased);
         Right.GetComponent<VRTK_ControllerEvents>().TriggerReleased += new ControllerInteractionEventHandler(DoTriggerReleased);
+
         parts = new Rigidbody[10];
 
         for (int i = 0; i < 10; i++)
         {
             parts[i] = gameObject.transform.GetChild(0).GetChild(i).GetComponent<Rigidbody>();
         }
+    }
+
+    public void SetScissors()
+    {
+        if (grab.GetGrabbedObject().GetComponent<Scissors>() != null)
+            scissors = grab.GetGrabbedObject().GetComponent<Scissors>();
     }
 
     public void Fix(int index)
