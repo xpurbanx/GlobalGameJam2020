@@ -20,6 +20,7 @@ TagManager:
   - CableEnding
   - Screw
   - SafeZone
+  - Scissors
   layers:
   - Default
   - TransparentFX

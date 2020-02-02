@@ -26,6 +26,10 @@ public class Dirt : Fixing
             {
                 isFixed = true;
                 GameController.AddPoints(1);
+                GetComponent<MeshRenderer>().enabled = false;
+                GetComponent<BoxCollider>().enabled = false;
+                dirtParticle.Stop();
+                rag = null;
             }
         }
 
