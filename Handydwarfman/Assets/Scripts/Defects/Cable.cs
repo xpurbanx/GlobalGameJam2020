@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cable : MonoBehaviour
 {
     public GameObject holdingHand;
+    public int color;
 
     public void OnGrab(GameObject hand)
     {

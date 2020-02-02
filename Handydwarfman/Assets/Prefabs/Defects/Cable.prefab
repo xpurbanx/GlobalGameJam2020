@@ -454,6 +454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holdingHand: {fileID: 0}
+  color: 0
 --- !u!1 &4093496172009449156
 GameObject:
   m_ObjectHideFlags: 0
