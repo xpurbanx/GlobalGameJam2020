@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Screw : Fixing
 {
+    public GameManager GameController;
     public float rotationChangeNeeded = 0;
     private float allRotation = 0;
     public Collider topCollider;
@@ -19,6 +20,7 @@ public class Screw : Fixing
         if (allRotation >= rotationChangeNeeded)
         {            
             isFixed = true;
+            GameController.AddPoints(1);
         }
     }
 

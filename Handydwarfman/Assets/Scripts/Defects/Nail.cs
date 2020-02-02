@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Nail : Fixing
 {
+    public GameManager GameController;
     public float positionChangeNeeded;  // O ile trzeba przesunąć gwóźdź
     public float decreasingPosition = 0.03f;   // O ile gwóźdź 
 
@@ -20,6 +21,7 @@ public class Nail : Fixing
             positionChangeNeeded -= decreasingPosition;
             transform.localPosition -= translateVector;
             if (positionChangeNeeded <= 0) isFixed = true;
+            GameController.AddPoints(1);
         }
     }
     private void OnCollisionEnter(Collision collision)

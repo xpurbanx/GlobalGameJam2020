@@ -305,6 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFixed: 0
+  GameController: {fileID: 0}
   positionChangeNeeded: 0.18
   decreasingPosition: 0.03
   topCollider: {fileID: 3534804093493293794}

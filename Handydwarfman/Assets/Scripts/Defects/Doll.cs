@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Doll : MonoBehaviour
 {
+    public GameManager GameController;
     public List<CableEntry> cableEntries;
     public ParticleSystem hearts;
 
@@ -13,7 +14,7 @@ public class Doll : MonoBehaviour
     {
         bool isFixed = true;
 
-        foreach(CableEntry cableEntry in cableEntries)
+        foreach (CableEntry cableEntry in cableEntries)
         {
             if (!cableEntry.isGood) isFixed = false;
         }
@@ -24,6 +25,10 @@ public class Doll : MonoBehaviour
     void Fixed()
     {
         if (!hearts.isPlaying)
+        {
             hearts.Play();
+            GameController.AddPoints(1);
+        }
+
     }
 }

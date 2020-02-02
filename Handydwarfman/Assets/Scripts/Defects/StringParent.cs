@@ -5,6 +5,7 @@ using VRTK;
 
 public class StringParent : MonoBehaviour
 {
+    public GameManager GameController;
     public GameObject PlayerController;
     public Scissors scissors;
     public bool triggerPressed;
@@ -47,6 +48,7 @@ public class StringParent : MonoBehaviour
         else
         {
             isFixed = true;
+            GameController.AddPoints(1);
             Destroy(parts[index].gameObject);
         }
 
