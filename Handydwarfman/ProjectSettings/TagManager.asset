@@ -19,6 +19,7 @@ TagManager:
   - Obstacle
   - CableEnding
   - Screw
+  - SafeZone
   layers:
   - Default
   - TransparentFX
