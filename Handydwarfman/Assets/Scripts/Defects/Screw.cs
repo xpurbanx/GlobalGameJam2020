@@ -12,6 +12,10 @@ public class Screw : Fixing
 
     private Screwdriver screwdriver;
 
+    private void Start()
+    {
+        GameController = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+    }
 
     public void Fix()
     {

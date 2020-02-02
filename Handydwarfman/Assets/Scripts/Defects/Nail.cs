@@ -13,6 +13,11 @@ public class Nail : Fixing
 
     private Vector3 translateVector;
 
+    private void Start()
+    {
+        GameController = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+    }
+
     public void Fix()
     {
         if (hammer.GetComponent<Rigidbody>().velocity.magnitude > 0.3f)
