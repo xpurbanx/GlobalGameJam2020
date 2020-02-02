@@ -326,7 +326,7 @@ MonoBehaviour:
   operation: 1
   checkType: 1
   identifiers:
-  - Scissors
+  - Tool
 --- !u!114 &8739819178114393661
 MonoBehaviour:
   m_ObjectHideFlags: 0

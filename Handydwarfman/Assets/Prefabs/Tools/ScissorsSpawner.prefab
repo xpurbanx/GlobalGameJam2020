@@ -105,7 +105,7 @@ MonoBehaviour:
   operation: 1
   checkType: 1
   identifiers:
-  - Scissors
+  - Tool
 --- !u!1 &5452462389239847309
 GameObject:
   m_ObjectHideFlags: 0
