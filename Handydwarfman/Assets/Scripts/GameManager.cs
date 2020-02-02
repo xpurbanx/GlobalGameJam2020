@@ -11,12 +11,9 @@ public class GameManager : MonoBehaviour
     public double time;
     public double gameTime;
     VRTK_HeadsetFade fade;
-    GameObject timeMesh, pointsMesh;
 
     void Start()
     {
-        timeMesh = GameObject.FindGameObjectWithTag("Time");
-        pointsMesh = GameObject.FindGameObjectWithTag("Points");
         fade = GetComponent<VRTK_HeadsetFade>();
     }
 

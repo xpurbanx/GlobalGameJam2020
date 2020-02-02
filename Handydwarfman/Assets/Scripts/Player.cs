@@ -14,11 +14,11 @@ public class Player : MonoBehaviour
 
     private GameObject activeCameraRig;
     private Quaternion rotation;
-   
+
 
     private void Start()
     {
-        
+
         follow = GetComponent<VRTK_TransformFollow>();
         follow.gameObjectToFollow = activeCameraRig;
         //follow.gameObjectToFollow = VRTK_DeviceFinder.PlayAreaTransform().gameObject;
@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
             Debug.Log("You are safe!");
         }
 
-        if (other.gameObject.name == "Cautious" )
+        if (other.gameObject.name == "Cautious")
         {
             Debug.Log("Be cautious!");
         }
@@ -66,6 +66,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.name == "Seen")
         {
             Debug.Log("RUNNNN!!!");
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>().FinishGame();
         }
     }
 
