@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 250807129908551841}
   m_Layer: 0
   m_Name: Screw
-  m_TagString: Nail
+  m_TagString: Screw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
