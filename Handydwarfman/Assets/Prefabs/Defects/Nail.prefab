@@ -331,27 +331,27 @@ PrefabInstance:
     - target: {fileID: 508320055911467633, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.31206
+      value: -0.417935
       objectReference: {fileID: 0}
     - target: {fileID: 508320055911467633, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.87354374
+      value: 0.8559395
       objectReference: {fileID: 0}
     - target: {fileID: 508320055911467633, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.638676
+      value: -0.022677237
       objectReference: {fileID: 0}
     - target: {fileID: 508320055911467633, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.098216295
+      value: -0.0982163
       objectReference: {fileID: 0}
     - target: {fileID: 508320055911467633, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.48293835
+      value: 0.48293832
       objectReference: {fileID: 0}
     - target: {fileID: 508320055911467633, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
         type: 3}
@@ -382,6 +382,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 508320055911467633, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 508320055911467633, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 508320055911467633, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3593605068046550093, guid: 25ffd4d4b0190e24db5957ea6664a6b9,
         type: 3}

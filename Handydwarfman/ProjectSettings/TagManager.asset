@@ -17,6 +17,7 @@ TagManager:
   - Tool
   - Nail
   - Obstacle
+  - CableEnding
   layers:
   - Default
   - TransparentFX
