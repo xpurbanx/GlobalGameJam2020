@@ -36,8 +36,13 @@ public class Watcher : MonoBehaviour
     }
     private void Update()
     {
+        //rotation = Quaternion.LookRotation(currentTarget.position - head.transform.position);
+        //head.transform.rotation = Quaternion.Slerp(transform.rotation, rotation, lookSpeed * Time.deltaTime);
+
         rotation = Quaternion.LookRotation(currentTarget.position - head.transform.position);
-        head.transform.rotation = Quaternion.Slerp(transform.rotation, rotation, lookSpeed * Time.deltaTime);
+            // Will assume you mean to divide by damping meanings it will take damping seconds to face target assuming it doesn't move
+            head.transform.rotation = Quaternion.Slerp(head.transform.rotation, rotation, Time.deltaTime * lookSpeed);
+
     }
 
     public void LookAtNextTarget()
