@@ -20,6 +20,7 @@ TagManager:
   - CableEnding
   - Screw
   - Movement
+  - SafeZone
   layers:
   - Default
   - TransparentFX
